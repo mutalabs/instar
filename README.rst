@@ -6,7 +6,7 @@ Instar soft core for FPGA
     :target: http://badge.fury.io/py/instar
 
 .. image:: https://travis-ci.org/euripedesrocha/instar.png?branch=master
-    :target: https://travis-ci.org/euripedesrocha/instar
+    :target: https://travis-ci.org/mutalabs/instar
 
 .. image:: https://pypip.in/d/instar/badge.png
     :target: https://pypi.python.org/pypi/instar
