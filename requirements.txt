@@ -1,1 +1,2 @@
+https://github.com/jandecaluwe/myhdl/archive/master.tar.gz
 wheel>=0.22
