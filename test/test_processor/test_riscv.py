@@ -8,5 +8,3 @@ def bench(stimulus, verification, circuit_parameters):
     f_verifica = verification(signals)
     return dut, f_estimulo, f_verifica
 
-def test_test():
-    assert(False)
