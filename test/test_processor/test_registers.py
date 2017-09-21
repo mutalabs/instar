@@ -1,1 +1,1 @@
-from instar.processor import registers 
+from instar.processor.registers import Registers 
