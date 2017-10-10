@@ -3,10 +3,7 @@
 import os
 import sys
 
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup, find_packages
 
 
 if sys.argv[-1] == 'publish':
@@ -29,13 +26,11 @@ setup(
     author='Euripedes Rocha Filho',
     author_email='rocha.euripedes@gmail.com',
     url='https://github.com/euripedesrocha/instar',
-    packages=[
-        'instar',
-    ],
+    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     package_dir={'instar': 'instar'},
     include_package_data=True,
-    install_requires=[
-    ],
+    dependency_links=['https://github.com/jandecaluwe/myhdl/archive/master.tar.gz'],
+    install_requires=[  ],
     license='MIT',
     zip_safe=False,
     keywords='instar',
@@ -44,11 +39,7 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: Implementation :: PyPy',
+        'Programming Language :: Python :: 3.6',
     ],
 )
