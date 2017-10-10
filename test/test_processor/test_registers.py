@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-from instar.processor.registers import Registers 
-=======
 import myhdl as hdl
 from instar.processor import rv_registers
 from instar.resources.resources import clock_gen
@@ -27,4 +24,3 @@ def test_read_from_R0():
 
     simulation = hdl.Simulation(bench(stimulus, verification))
     simulation.run()
->>>>>>> master
